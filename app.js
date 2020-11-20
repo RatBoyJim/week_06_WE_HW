@@ -7,7 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteAllDeets = document.querySelector('#delete-all-deets');
     deleteAllDeets.addEventListener('click', actionDeleteAllDeets);
 
+    // const newPlayerDeets = document.querySelector('#player-deets-form');
+    // newPlayerDeets.addEventListener('submit', generateNewPlayerDeets);
+    // if (document.querySelector('#player-deets-form[name="still-active"]')) {
+    //     document.querySelectorAll('#player-deets-form[name="still-active]').forEach((newPlayerDeets) => {
+    //         newPlayerDeets.addEventListener('change', generateNewPlayerDeets)
+    //     })}
 });
+
 
 const generateNewPlayerDeets = function (event) {
     event.preventDefault();
@@ -33,6 +40,11 @@ const createPlayerDeetsItem = function (form) {
     const nationality = document.createElement('h4');
     nationality.innerText = form.nationality.value;
     playerDeetsItem.appendChild(nationality);
+
+    const playing = document.createElement('h4');
+    playing.innerText = form.playing.value;
+    playerDeetsItem.appendChild(playing);
+
 
     return playerDeetsItem;
 };

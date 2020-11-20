@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src= app.js></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" type="image/png" href="/static/images/clan.png">
     <title>Player Picker</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Glasgow Clan Player Picker</h1>
+    </header>
+    <form id="player-deets-form">
+        <div class="form-input">
+            <label for="name">Player's Name</label>
+            <input type="text" id="name" required/>
+        </div>
+        <div class="form-input">
+            <label for="position">Player's Position</label>
+            <input type="text" id="position" required/>
+        </div>
+        <div class="form-input">
+            <label for="nationality">Player's Nationality</label>
+            <input type="text" id="nationality" required/>
+        </div>
+    </form>
+        
 </body>
 </html>

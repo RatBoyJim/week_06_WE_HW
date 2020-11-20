@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Ready to go!");
+
     const newPlayerDeets = document.querySelector('#player-deets-form');
     newPlayerDeets.addEventListener('submit', generateNewPlayerDeets);
+
+    const deleteAllDeets = document.querySelector('#delete-all-deets');
+    deleteAllDeets.addEventListener('click', actionDeleteAllDeets);
 
 });
 
@@ -31,4 +35,10 @@ const createPlayerDeetsItem = function (form) {
     playerDeetsItem.appendChild(nationality);
 
     return playerDeetsItem;
+};
+
+const actionDeleteAllDeets = function (event) {
+    const playerDeetsList = document.querySelector('#player-deets-list');
+    playerDeetsList.innerHTML = '';
+    
 };

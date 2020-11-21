@@ -15,22 +15,29 @@
     <form id="player-deets-form">
         <div class="form-input">
             <label for="name">Player's Name</label>
-            <input type="text" id="name" required/>
+            <input type="text" id="name" required autofocus>
         </div>
         <div class="form-input">
-            <label for="position">Player's Position</label>
-            <input type="text" id="position" required/>
+            <label for="position">Choose a position:</label>
+            <select id="position" name="position">
+            <option value="" required disabled selected>Select Player's Position</option>
+            <option value="Goaltender">Goaltender</option>
+            <option value="Defenceman">Defenceman</option>
+            <option value="Center">Center</option>
+            <option value="Winger">Winger</option>
+            <option value="Forward">Forward</option>
+        </select>
         </div>
         <div class="form-input">
             <label for="nationality">Player's Nationality</label>
             <input type="text" id="nationality" required/>
         </div>
         <div class="form-input">
-            <p>Is the player stil an active player?</p>
-            <input type="radio" name="playing" value="active" id="playing">
-            <label for="active">Yes</label><br>
-            <input type="radio" name="playing" value="inactive" id="playing">
-            <label for="inactive">No</label><br>
+            <p>Is the player left or right handed?</p>
+            <input type="radio" name="playing" value="Left Handed" id="playing">
+            <label for="Left">Left</label><br>
+            <input type="radio" name="playing" value="Right Handed" id="playing">
+            <label for="Right">Right</label><br>
         </div>
         <br>
         <button type="submit">Add Player Deets</button>

@@ -21,11 +21,15 @@
     <section id="form-container">
     <form id="player-deets-form">
         <div class="form-input">
-            <label for="name">Player's Name</label>
-            <input type="text" id="name" required autofocus>
+            <label for="name">Player's Name:</label>
+            <input type="text" id="name" placeholder="eg. Rasmus Bjerrum" required autofocus>
         </div>
         <div class="form-input">
-            <label for="position">Choose a position:</label>
+            <label for="nationality">Player's Nationality:</label>
+            <input type="text" id="nationality" placeholder= "eg. Danish" required/>
+        </div>
+        <div class="form-input">
+            <label for="position">Player's position:</label>
             <select id="position" name="position">
             <option value="" required disabled selected>Select Player's Position</option>
             <option value="Goaltender">Goaltender</option>
@@ -34,10 +38,6 @@
             <option value="Winger">Winger</option>
             <option value="Forward">Forward</option>
         </select>
-        </div>
-        <div class="form-input">
-            <label for="nationality">Player's Nationality</label>
-            <input type="text" id="nationality" required/>
         </div>
         <div class="form-input">
             <p>Is the player left or right handed?</p>

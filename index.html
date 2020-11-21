@@ -6,12 +6,19 @@
     <script src= app.js></script>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="icon" type="image/png" href="static/images/clan.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Open+Sans&display=swap" rel="stylesheet">   
     <title>Player Picker</title>
 </head>
 <body>
     <header>
-        <h1>Glasgow Clan Player Picker</h1>
+        <img src="static/images/image.jpeg" alt="image of the Glasgow Clan logo">
+        <section id="title">
+            <img src="static/images/logo.png" alt="Glasgow Clan">
+            <h2>Dream Team Player Picker</h2>
+        </section>
     </header>
+    <section id="form-container">
     <form id="player-deets-form">
         <div class="form-input">
             <label for="name">Player's Name</label>
@@ -34,18 +41,20 @@
         </div>
         <div class="form-input">
             <p>Is the player left or right handed?</p>
-            <input type="radio" name="playing" value="Left Handed" id="playing">
+            <input type="radio" name="playing" value="Left Handed" id="playing" required>
             <label for="Left">Left</label><br>
-            <input type="radio" name="playing" value="Right Handed" id="playing">
+            <input type="radio" name="playing" value="Right Handed" id="playing" required>
             <label for="Right">Right</label><br>
         </div>
         <br>
         <button type="submit">Add Player Deets</button>
+        <button id="delete-all-deets">Delete All Deets</button>
     </form>
 
-    <button id="delete-all-deets">Delete All Deets</button>
-
-        
+    
+    </section>
+    
     <ul id="player-deets-list"></ul>
+      
 </body>
 </html>

@@ -7,12 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteAllDeets = document.querySelector('#delete-all-deets');
     deleteAllDeets.addEventListener('click', actionDeleteAllDeets);
 
-    // const newPlayerDeets = document.querySelector('#player-deets-form');
-    // newPlayerDeets.addEventListener('submit', generateNewPlayerDeets);
-    // if (document.querySelector('#player-deets-form[name="still-active"]')) {
-    //     document.querySelectorAll('#player-deets-form[name="still-active]').forEach((newPlayerDeets) => {
-    //         newPlayerDeets.addEventListener('change', generateNewPlayerDeets)
-    //     })}
 });
 
 

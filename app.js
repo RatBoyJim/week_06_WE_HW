@@ -27,6 +27,11 @@ const createPlayerDeetsItem = function (form) {
     name.innerText = form.name.value;
     playerDeetsItem.appendChild(name);
 
+    const nameImage = new Image();
+    nameImage.src = `static/images/${form.name.value}.jpg`;
+    nameImage.style = "width:75px;height:75px;"
+    playerDeetsItem.appendChild(nameImage);
+
     const position = document.createElement('h3');
     position.innerText = form.position.value;
     playerDeetsItem.appendChild(position);

@@ -35,6 +35,11 @@ const createPlayerDeetsItem = function (form) {
     nationality.innerText = form.nationality.value;
     playerDeetsItem.appendChild(nationality);
 
+    const nationalityFlag = new Image();
+    nationalityFlag.src = `static/images/${form.nationality.value}.png`;
+    nationalityFlag.style = "width:48px;height:48px;"
+    playerDeetsItem.appendChild(nationalityFlag);
+    
     const playing = document.createElement('h4');
     playing.innerText = form.playing.value;
     playerDeetsItem.appendChild(playing);
